@@ -1,4 +1,5 @@
 # encryption-snippets
+
 Some snippets to generate secrets, keys, certificates
 
 ## Self Signed SSL Certificate
@@ -6,8 +7,11 @@ Some snippets to generate secrets, keys, certificates
 **Kind:** plain certificate with plain key
 
 **File Extensions:** .pem
+
 **Tool:**: openssl
+
 **Plattform:** UNIX
+
 **Command:**
 
 ```bash
