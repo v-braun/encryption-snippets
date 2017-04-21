@@ -12,6 +12,8 @@ Some snippets to generate secrets, keys, certificates
 
 **Plattform:** UNIX
 
+**Lifetime:** MAX 
+
 **Command:**
 
 ```bash
