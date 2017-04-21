@@ -6,7 +6,7 @@ Some snippets to generate secrets, keys, certificates
 
 **Kind:** plain certificate with plain key
 
-**File Extensions:** .pem
+**File Extensions:** .pem and .crt
 
 **Tool:**: openssl
 
@@ -17,5 +17,5 @@ Some snippets to generate secrets, keys, certificates
 **Command:**
 
 ```bash
-openssl req -x509 -nodes -days 24800 -newkey rsa:2048 -keyout private-key-plain.pem -out certificate.pem
+openssl req -x509 -nodes -days 24800 -newkey rsa:2048 -keyout private-key-plain.pem -out certificate.crt
 ```
