@@ -73,3 +73,29 @@ openssl req \
     -sha256 \
     -days 3650
 ```    
+
+## Extract cert + key from pfx
+
+**Kind:** plain certificate with plain private key
+
+**File Extensions IN:** .pfx
+
+**File Extensions OUT:** .key and .crt
+
+**Tool:**: openssl
+
+**Plattform:** UNIX
+
+
+**Command:**
+
+```bash
+# export private key
+openssl pkcs12 -in certname.pfx -nocerts -out key.pem -nodes
+
+# export certificate
+openssl pkcs12 -in certname.pfx -nokeys -out cert.pem
+
+# remove passphrase from private key
+openssl rsa -in key.pem -out server.key 
+```
